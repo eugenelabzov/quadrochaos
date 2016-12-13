@@ -1,0 +1,15 @@
+{	
+	"images":1,"frames":
+	[
+		{"image":0,"width":47,"height":92,"u":54,"v":1,"name":"NumberFont_0"},
+		{"image":0,"width":26,"height":92,"u":196,"v":95,"name":"NumberFont_1"},
+		{"image":0,"width":47,"height":92,"u":103,"v":1,"name":"NumberFont_2"},
+		{"image":0,"width":47,"height":92,"u":152,"v":1,"name":"NumberFont_3"},
+		{"image":0,"width":51,"height":92,"u":1,"v":1,"name":"NumberFont_4"},
+		{"image":0,"width":45,"height":92,"u":102,"v":95,"name":"NumberFont_5"},
+		{"image":0,"width":46,"height":92,"u":54,"v":95,"name":"NumberFont_6"},
+		{"image":0,"width":49,"height":92,"u":1,"v":95,"name":"NumberFont_7"},
+		{"image":0,"width":45,"height":92,"u":149,"v":95,"name":"NumberFont_8"},
+		{"image":0,"width":47,"height":92,"u":201,"v":1,"name":"NumberFont_9"}
+	]
+}

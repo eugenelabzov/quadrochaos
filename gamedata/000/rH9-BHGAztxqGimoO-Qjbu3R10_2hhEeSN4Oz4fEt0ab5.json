@@ -1,0 +1,42 @@
+{
+    "Sounds":
+    [
+        {"Name":"BestScore", "Sample":"BestScore"},
+        {"Name":"BonusComplete", "Sample":"BonusComplete"},
+        {"Name":"BoughtGame", "Sample":"NewPuzzlesUnlocked"},
+        {"Name":"ColourComplete01", "Sample":"ColourComplete01"},
+        {"Name":"ColourComplete02", "Sample":"ColourComplete02"},
+        {"Name":"ColourComplete03", "Sample":"ColourComplete03"},
+        {"Name":"CoverFanfare", "Sample":"CoverFanfare"},
+        {"Name":"Go", "Sample":"Go"},
+        {"Name":"Join", "Sample":"Join"},
+        {"Name":"LevelUnwrapped", "Sample":"LevelUnwrapped"},
+        {"Name":"Motion", "Sample":"Motion"},
+        {"Name":"MotionRepeat", "Sample":"MotionRepeat"},
+        {"Name":"NewPuzzlesUnlocked", "Sample":"NewPuzzlesUnlocked"},
+        {"Name":"NoPurchase", "Sample":"Reset", "PitchMin":1.0, "PitchMax":1.0},
+        {"Name":"OptionIndicated", "Sample":"OptionIndicated"},
+        {"Name":"OptionMotion", "Sample":"OptionMotion"},
+        {"Name":"OptionSelected", "Sample":"OptionSelected"},
+        {"Name":"Pause", "Sample":"Pause"},
+        {"Name":"PicturePiece", "Sample":"PicturePiece"},
+        {"Name":"PuzzleComplete", "Sample":"PuzzleComplete"},
+        {"Name":"Quit", "Sample":"Quit", "PitchMin":1.0, "PitchMax":1.0},
+        {"Name":"Reset", "Sample":"Reset"},
+        {"Name":"ScoreCount", "Sample":"ScoreCount"},
+        {"Name":"Start", "Sample":"Start"},
+        {"Name":"ThemeComplete", "Sample":"ThemeComplete"},
+        {"Name":"Undo", "Sample":"Undo"},
+
+        {"Name":"CoverThemeStart", "Sample":"CoverThemeStart", "Looped":true, "Category":1},
+        {"Name":"CoverTheme", "Sample":"CoverTheme", "Looped":true, "VolumeMin":0.8, "VolumeMax":0.8, "Category":1},
+        {"Name":"EverythingCompleteStart", "Sample":"EverythingCompleteStart", "Looped":false, "Category":1},
+        {"Name":"EverythingComplete", "Sample":"EverythingComplete", "Looped":false, "VolumeMin":1.0, "VolumeMax":1.0, "Category":1},
+        {"Name":"LevelSelectThemeStart", "Sample":"LevelSelectThemeStart", "Looped":true, "VolumeMin":0.6, "VolumeMax":0.6, "Category":1},
+        {"Name":"LevelSelectTheme", "Sample":"LevelSelectTheme", "Looped":true, "VolumeMin":0.6, "VolumeMax":0.6, "Category":1},
+        {"Name":"PlayThemeStart", "Sample":"PlayThemeStart", "Looped":true, "VolumeMin":0.8, "VolumeMax":0.8, "Category":1},
+        {"Name":"PlayTheme", "Sample":"PlayTheme", "Looped":true, "VolumeMin":0.8, "VolumeMax":0.8, "Category":1},
+        {"Name":"ReviewThemeStart", "Sample":"ReviewThemeStart", "Looped":true, "Category":1},
+        {"Name":"ReviewTheme", "Sample":"ReviewTheme", "Looped":true, "VolumeMin":1.0, "VolumeMax":1.0, "Category":1}
+    ]
+}

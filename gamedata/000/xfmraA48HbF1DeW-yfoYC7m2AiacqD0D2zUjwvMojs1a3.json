@@ -1,0 +1,10 @@
+{	
+	"images":1,"frames":
+	[
+		{"image":0,"width":88,"height":105,"u":1,"v":879,"name":"DenkiLogo"},
+		{"image":0,"width":1022,"height":720,"u":1,"v":1,"name":"LoadingScreen"},
+		{"image":0,"width":1,"height":1,"u":1,"v":986,"name":"ProgressBar"},
+		{"image":0,"width":154,"height":154,"u":1,"v":723,"name":"ProgressIndicator01"},
+		{"image":0,"width":154,"height":154,"u":157,"v":723,"name":"ProgressIndicator02"}
+	]
+}

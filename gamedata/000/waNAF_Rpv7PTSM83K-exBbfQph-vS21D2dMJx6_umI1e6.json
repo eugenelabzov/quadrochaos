@@ -1,0 +1,17 @@
+{
+    "width":20480,"height":20480,"layers":
+    [
+       {"speedX":1,"speedY":1,"bucketWidth":1280,"bucketHeight":720,"staticLayer":true,"name": "Far BG","entities":
+       [
+
+       ]},
+       {"speedX":1,"speedY":1,"bucketWidth":1280,"bucketHeight":720,"staticLayer":true,"name": "Main","entities":
+       [
+
+       ]},
+       {"speedX":1,"speedY":1,"bucketWidth":1280,"bucketHeight":720,"staticLayer":true,"name": "Lighting","entities":
+       [
+
+       ]}
+    ]
+}

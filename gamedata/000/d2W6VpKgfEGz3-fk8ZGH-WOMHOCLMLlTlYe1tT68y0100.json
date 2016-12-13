@@ -1,0 +1,17 @@
+{
+    "objects":
+    [
+        {"name":"Game","image":"GameIcon","type":"Game"}
+	],
+
+    "categories":
+    [
+        {
+            "name":"Unknown",
+            "items":
+            [
+                "Game"
+            ]
+        }
+    ]
+}

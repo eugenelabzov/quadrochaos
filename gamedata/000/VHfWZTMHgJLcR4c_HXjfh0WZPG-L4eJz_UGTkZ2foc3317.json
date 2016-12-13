@@ -1,0 +1,240 @@
+{
+    "Scripts":
+    [
+       {"Name":"GameStatePreview", "Code":
+       [
+           {"Func":"SpriteCreate", "x":640, "y":480, "Image":"LightSquare", "Name":"Shade"},
+           {"Func":"RenderableScaleSet", "Name":"Shade", "x":100.0, "y":80.0},
+           {"Func":"SoundPlay", "Name":"QuestPreview"},
+           {"Func":"RenderableColourSet", "Name":"Shade", "r":0, "g":0, "b":0, "a":0.6},
+           {"Func":"TextCreate", "Name":"CeremonyGamePreview", "Text":"CeremonyGamePreview", "x":640, "y":160, "Font":"Font"},
+           {"Func":"RenderableColourSet", "Name":"CeremonyGamePreview", "r":0.2, "g":1, "b":0.2, "a":1},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyGamePreview", "x":2.0, "y":2.0},
+        {"Func":"Wait", "Delay":1.0},
+           {"Func":"TextCreate", "Name":"CeremonyGamePreviewExtra", "Text":"CeremonyGamePreviewExtra", "x":640, "y":320, "Font":"Font"},
+           {"Func":"TextSetQuestName", "Name":"CeremonyGamePreviewExtra"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyGamePreviewExtra", "x":1.3, "y":1.3},
+           {"Func":"RenderableColourSet", "Name":"CeremonyGamePreviewExtra", "r":1, "g":0.6, "b":0.2, "a":1},
+        {"Func":"Wait", "Delay":1.0},
+           {"Func":"SoundPlay", "Name":"QuestPreviewExtra"},
+           {"Func":"TextDestroy", "Name":"CeremonyGamePreview"},
+           {"Func":"TextCreate", "Name":"CeremonyGamePreviewExtraExtra", "Text":"CeremonyGamePreviewExtraExtra", "x":640, "y":480, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyGamePreviewExtraExtra", "x":1.0, "y":1.0},
+           {"Func":"TextSetQuestObjective", "Name":"CeremonyGamePreviewExtraExtra"},
+        {"Func":"Wait", "Delay":1.0},
+           {"Func":"TextDestroy", "Name":"CeremonyGamePreviewExtra"},
+        {"Func":"Wait", "Delay":1.0}
+       ]},
+	   
+       {"Name":"GameStateGetReady", "Code":
+       [
+        {"Func":"Wait", "Delay":0.5}
+       ]},
+	   
+       {"Name":"GameStateGo", "Code":
+       [
+        {"Func":"Wait", "Delay":0.5}
+       ]},
+	   
+       {"Name":"GameStateDead", "Code":
+       [
+		   {"Func":"ChangeMusic", "Music":"", "Volume":0.4},
+           {"Func":"TextCreate", "Name":"CeremonyGameDead", "Text":"CeremonyGameDead", "x":640, "y":200, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyGameDead", "x":2.0, "y":2.0},
+           {"Func":"TextCreate", "Name":"CeremonyGameDeadExtra", "Text":"CeremonyGameDeadExtra", "x":640, "y":320, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyGameDeadExtra", "x":1.0, "y":1.0},
+		   {"Func":"ChangeMusic", "Music":"", "Volume":1.0},
+        {"Func":"Wait", "Delay":3.0}
+       ]},
+	   
+       {"Name":"GameStateComplete", "Code":
+       [
+		   {"Func":"ChangeMusic", "Music":"", "Volume":0.4},
+           {"Func":"CameraMoveZoom", "Zoom":1.85, "Delay":0.5},
+           {"Func":"TextCreate", "Name":"CeremonyGameComplete", "Text":"CeremonyGameComplete", "x":640, "y":528, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyGameComplete", "x":2.0, "y":2.0},
+           {"Func":"TextCreate", "Name":"CeremonyGameCompleteExtra", "Text":"CeremonyGameCompleteExtra", "x":640, "y":640, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyGameCompleteExtra", "x":1.0, "y":1.0},
+           {"Func":"SoundPlay", "Name":"QuestComplete"},
+		   {"Func":"ChangeMusic", "Music":"", "Volume":1.0},
+        {"Func":"Wait", "Delay":3.0}
+       ]},
+	   
+       {"Name":"BossStart", "Code":
+       [
+		   {"Func":"ChangeMusic", "Music":"", "Volume":1.0},
+           {"Func":"TextCreate", "Name":"CeremonyBossStart", "Text":"CeremonyBossStart", "x":640, "y":200, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyBossStart", "x":2.0, "y":2.0},
+           {"Func":"SoundPlay", "Name":"BossStart"},
+        {"Func":"Wait", "Delay":3.0},
+		   {"Func":"ChangeMusic", "Music":"MusicPlay", "Volume":1.0}
+       ]},
+	   
+       {"Name":"Celebrate", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyCelebrate", "Text":"CeremonyCelebrate", "x":640, "y":550, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCelebrate", "x":1.6, "y":1.6},
+        {"Func":"Wait", "Delay":2.0}
+       ]},
+	   
+       {"Name":"CelebrateObjective", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyCelebrate", "Text":"Dynamic", "x":640, "y":550, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCelebrate", "x":1.5, "y":1.5},
+        {"Func":"Wait", "Delay":2.0}
+       ]},
+	   
+       {"Name":"CelebrateOneWordKill", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyCelebrateOneWordKill", "Text":"CeremonyCelebrateOneWordKill", "x":640, "y":120, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCelebrateOneWordKill", "x":1.2, "y":1.2},
+           {"Func":"RenderableColourSet", "Name":"CeremonyCelebrateOneWordKill", "r":1, "g":0.6, "b":0.2, "a":1},
+           {"Func":"TextCreate", "Name":"CeremonyCelebrateOneWordKillExtra", "Text":"CeremonyCelebrateOneWordKillExtra", "x":640, "y":200, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCelebrateOneWordKillExtra", "x":1, "y":1},
+           {"Func":"TextCreate", "Name":"CeremonyCelebrate", "Text":"CeremonyCelebrate", "x":640, "y":550, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCelebrate", "x":1.6, "y":1.6},
+        {"Func":"Wait", "Delay":2.0}
+       ]},
+	   
+       {"Name":"CelebrateOverkill", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyCelebrateOverkill", "Text":"CeremonyCelebrateOverkill", "x":640, "y":100, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCelebrateOverkill", "x":1.6, "y":1.6},
+           {"Func":"RenderableColourSet", "Name":"CeremonyCelebrateOverkill", "r":1, "g":0.2, "b":0.2, "a":1},
+           {"Func":"TextCreate", "Name":"CeremonyCelebrateOverkillExtra", "Text":"CeremonyCelebrateOverkillExtra", "x":640, "y":200, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCelebrateOverkillExtra", "x":1, "y":1},
+           {"Func":"TextCreate", "Name":"CeremonyCelebrate", "Text":"CeremonyCelebrate", "x":640, "y":550, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCelebrate", "x":1.6, "y":1.6},
+        {"Func":"Wait", "Delay":2.0}
+       ]},
+	   
+       {"Name":"GameWarning", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyWarning", "Text":"Default", "x":640, "y":550, "Font":"Font"},
+           {"Func":"TextSetMonsterName", "Name":"CeremonyWarning"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyWarning", "x":1.6, "y":1.6},
+        {"Func":"Wait", "Delay":1.2}
+       ]},
+	   
+       {"Name":"GameWarningBoss", "Code":
+       [
+		   {"Func":"ChangeMusic", "Music":"", "Volume":1.0},
+           {"Func":"SoundPlay", "Name":"BossStart"},
+        {"Func":"Wait", "Delay":1.2},
+           {"Func":"TextCreate", "Name":"CeremonyWarning", "Text":"Default", "x":640, "y":550, "Font":"Font"},
+           {"Func":"TextSetMonsterName", "Name":"CeremonyWarning"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyWarning", "x":1.6, "y":1.6},
+        {"Func":"Wait", "Delay":1.0},
+           {"Func":"SetMonsterWarning"},
+        {"Func":"Wait", "Delay":2.0},
+           {"Func":"CreateBigHeart"},
+        {"Func":"Wait", "Delay":1.0}
+       ]},
+	   
+       {"Name":"GameWarningFinalBoss", "Code":
+       [
+		   {"Func":"ChangeMusic", "Music":"", "Volume":1.0},
+           {"Func":"SoundPlay", "Name":"BossStart"},
+        {"Func":"Wait", "Delay":1.2},
+           {"Func":"CameraMoveZoom", "Zoom":0.6, "Delay":0.5},
+        {"Func":"Wait", "Delay":0.5},
+           {"Func":"TextCreate", "Name":"CeremonyWarning", "Text":"Default", "x":640, "y":550, "Font":"Font"},
+           {"Func":"TextSetMonsterName", "Name":"CeremonyWarning"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyWarning", "x":1.6, "y":1.6},
+        {"Func":"Wait", "Delay":1.0},
+           {"Func":"SetMonsterWarning"},
+        {"Func":"Wait", "Delay":2.0},
+           {"Func":"CreateBigHeart"},
+        {"Func":"Wait", "Delay":1.0}
+       ]},
+	   
+       {"Name":"GameSurpriseAttack", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonySurpriseAttack", "Text":"Dynamic", "x":640, "y":450, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonySurpriseAttack", "x":2.0, "y":2.0},
+           {"Func":"TextCreate", "Name":"CeremonyWarning", "Text":"Default", "x":640, "y":580, "Font":"Font"},
+           {"Func":"TextSetMonsterName", "Name":"CeremonyWarning"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyWarning", "x":1.6, "y":1.6},
+        {"Func":"Wait", "Delay":1.6}
+       ]},
+	   
+       {"Name":"GamePlayerAttack", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyPlayerAttack01", "Text":"Dynamic", "x":640, "y":450, "Font":"Font"},
+		   {"Func":"CreateWord", "Player":true, "x":640, "y":550},
+           {"Func":"TextCreate", "Name":"CeremonyPlayerAttack02", "Text":"Dynamic", "x":640, "y":650, "Font":"Font"},
+        {"Func":"Wait", "Delay":0.5},
+		   {"Func":"DoAttack", "Player":true},
+        {"Func":"Wait", "Delay":2.0},
+           {"Func":"TextDestroy", "Name":"CeremonyPlayerAttack01"},
+		   {"Func":"DestroyWord"},
+           {"Func":"TextDestroy", "Name":"CeremonyPlayerAttack02"},
+        {"Func":"Wait", "Delay":0.1}
+       ]},
+	   
+       {"Name":"GamePlayerAttackChest", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyPlayerAttack01", "Text":"Dynamic", "x":640, "y":450, "Font":"Font"},
+		   {"Func":"CreateWord", "Player":true, "x":640, "y":550},
+           {"Func":"TextCreate", "Name":"CeremonyPlayerAttack02", "Text":"Dynamic", "x":640, "y":650, "Font":"Font"},
+        {"Func":"Wait", "Delay":0.5},
+		   {"Func":"DoAttack", "Player":true},
+        {"Func":"Wait", "Delay":2.0},
+           {"Func":"TextDestroy", "Name":"CeremonyPlayerAttack01"},
+		   {"Func":"DestroyWord"},
+           {"Func":"TextDestroy", "Name":"CeremonyPlayerAttack02"},
+        {"Func":"Wait", "Delay":0.1}
+       ]},
+	   
+       {"Name":"GameEnemyAttack", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyEnemyAttack01", "Text":"Dynamic", "x":640, "y":450, "Font":"Font"},
+		   {"Func":"CreateWord", "Player":false, "x":640, "y":550},
+           {"Func":"TextCreate", "Name":"CeremonyEnemyAttack02", "Text":"Dynamic", "x":640, "y":650, "Font":"Font"},
+        {"Func":"Wait", "Delay":0.5},
+		   {"Func":"DoAttack", "Player":false},
+        {"Func":"Wait", "Delay":2.0},
+           {"Func":"TextDestroy", "Name":"CeremonyEnemyAttack01"},
+		   {"Func":"DestroyWord"},
+           {"Func":"TextDestroy", "Name":"CeremonyEnemyAttack02"},
+        {"Func":"Wait", "Delay":0.1}
+       ]},
+	   
+       {"Name":"GameTimeUp", "Code":
+       [
+           {"Func":"SoundPlay", "Name":"ChestFail"},
+           {"Func":"TextCreate", "Name":"CeremonyTimeUp", "Text":"CeremonyTimeUp", "x":640, "y":440, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyTimeUp", "x":2.0, "y":2.0},
+           {"Func":"RenderableColourSet", "Name":"CeremonyTimeUp", "r":1, "g":0.2, "b":0.2, "a":1},
+           {"Func":"TextCreate", "Name":"CeremonyTimeUpExtra", "Text":"CeremonyTimeUpExtra", "x":640, "y":580, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyTimeUpExtra", "x":1.2, "y":1.2},
+        {"Func":"Wait", "Delay":1.4}
+       ]},
+	   
+       {"Name":"CeremonyCaptured", "Code":
+       [
+           {"Func":"EntityCreate", "Name":"Cage", "Layer":"Main", "x":0, "y":0, "Image":"Cage"},
+           {"Func":"EntitySetAnchor", "Name":"Cage", "Anchor":"BottomMiddle"},
+           {"Func":"GameSetCageCoords", "Name":"Cage"},
+           {"Func":"GameMoveCageCoords", "Name":"Cage", "Delay":0.3},
+        {"Func":"Wait", "Delay":0.3},
+           {"Func":"SoundPlay", "Name":"CageLand"},
+		
+           {"Func":"CameraShake", "Intensity":20, "Delay":0.5},
+        {"Func":"Wait", "Delay":0.5},
+
+           {"Func":"TextCreate", "Name":"CeremonyCaptured", "Text":"Dynamic", "x":640, "y":528, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyCaptured", "x":2.0, "y":2.0},
+           {"Func":"RenderableColourSet", "Name":"CeremonyCaptured", "r":1, "g":0.2, "b":0.2, "a":1},
+        {"Func":"Wait", "Delay":2.0}
+       ]},
+	   
+       {"Name":"CeremonyEscape", "Code":
+       [
+           {"Func":"TextCreate", "Name":"CeremonyEscape", "Text":"CeremonyEscape", "x":640, "y":512, "Font":"Font"},
+           {"Func":"RenderableScaleSet", "Name":"CeremonyEscape", "x":3.0, "y":3.0},
+           {"Func":"RenderableColourSet", "Name":"CeremonyEscape", "r":0.2, "g":1.0, "b":0.2, "a":1},
+        {"Func":"Wait", "Delay":1.4}
+       ]}
+    ]
+}

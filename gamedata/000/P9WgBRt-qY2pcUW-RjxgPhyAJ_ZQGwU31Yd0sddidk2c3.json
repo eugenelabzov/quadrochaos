@@ -1,0 +1,14 @@
+{	
+	"images":1,"frames":
+	[
+		{"image":0,"width":16,"height":16,"u":67,"v":1,"name":"Editor_Arrow"},
+		{"image":0,"width":64,"height":64,"u":1,"v":1,"name":"Editor_ArrowDown"},
+		{"image":0,"width":16,"height":16,"u":67,"v":19,"name":"Editor_Arrow_Up"},
+		{"image":0,"width":15,"height":15,"u":85,"v":1,"name":"Editor_Cross"},
+		{"image":0,"width":15,"height":15,"u":85,"v":18,"name":"Editor_CrossEmpty"},
+		{"image":0,"width":23,"height":123,"u":1,"v":67,"name":"Editor_PaletteTab"},
+		{"image":0,"width":16,"height":16,"u":67,"v":37,"name":"Editor_Plus"},
+		{"image":0,"width":15,"height":15,"u":85,"v":35,"name":"Editor_Tick"},
+		{"image":0,"width":1,"height":1,"u":67,"v":55,"name":"Editor_White"}
+	]
+}

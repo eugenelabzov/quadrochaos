@@ -1,0 +1,19 @@
+{	
+	"images":1,"frames":
+	[
+		{"image":0,"width":1,"height":1,"u":131,"v":101,"name":"Blank"},
+		{"image":0,"width":128,"height":128,"u":1,"v":1,"name":"Circle"},
+		{"image":0,"width":64,"height":64,"u":131,"v":1,"name":"GameIcon"},
+		{"image":0,"width":64,"height":64,"u":197,"v":1,"name":"GroupIcon"},
+		{"image":0,"width":64,"height":64,"u":263,"v":1,"name":"InvalidEntity"},
+		{"image":0,"width":64,"height":64,"u":329,"v":1,"name":"InvalidImage"},
+		{"image":0,"width":64,"height":64,"u":395,"v":1,"name":"InvalidObject"},
+		{"image":0,"width":64,"height":64,"u":1,"v":131,"name":"InvalidTexture"},
+		{"image":0,"width":32,"height":32,"u":131,"v":67,"name":"MarkerIcon"},
+		{"image":0,"width":64,"height":64,"u":1,"v":197,"name":"PinIcon"},
+		{"image":0,"width":64,"height":64,"u":1,"v":263,"name":"RodIcon"},
+		{"image":0,"width":64,"height":64,"u":1,"v":329,"name":"SpringIcon"},
+		{"image":0,"width":64,"height":64,"u":1,"v":395,"name":"WeldIcon"},
+		{"image":0,"width":1,"height":1,"u":131,"v":104,"name":"White"}
+	]
+}
