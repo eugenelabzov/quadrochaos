@@ -85426,19 +85426,10 @@
                     Help.fLastXDiff = 0;
                     Help.dwGestureTouch = -1
                 } else if (psArea === Help.sLinkArea) {
-                    window.location.href = "http://www.denkiblocks.co.uk";
+                    window.location.href = "https://ok.ru/group/53079599743119";
                     Help.dwGestureTouch = -1
                 } else if (psArea === Help.sDenkiArea) {
-                    window.location.href = "http://www.denki.co.uk";
-                    Help.dwGestureTouch = -1
-                } else if (psArea === Help.sFaceBookArea) {
-                    window.location.href = "http://www.twitter.com/denkigames";
-                    Help.dwGestureTouch = -1
-                } else if (psArea === Help.sYoutubeArea) {
-                    window.location.href = "http://www.facebook.com/pages/Denki/85881460412";
-                    Help.dwGestureTouch = -1
-                } else if (psArea === Help.sTwitterArea) {
-                    window.location.href = "http://www.youtube.com/denkigames";
+                    window.location.href = "https://ok.ru/group/53079599743119";
                     Help.dwGestureTouch = -1
                 } else if (Application.TouchControls) {
                     if (Help.dwGestureTouch !== -1 && JamSystem.InputManager.GetMouseButtonHeld(0)) {
